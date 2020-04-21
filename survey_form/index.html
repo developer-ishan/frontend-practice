@@ -1,0 +1,151 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body ,html{
+            margin: 0px;
+            background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-gAK5mb00SSg%2FTxBNsPm5aNI%2FAAAAAAAAAzA%2F5EHknQNYOFU%2Fs1600%2Fmintyellow.jpg&f=1&nofb=1");
+        }
+        #title{
+            text-align: center;
+            font-size: 100px;
+        }
+        p[id="description"]{
+            text-align: center;
+            font-size: 40px;
+        }
+        #survey-form{
+            display: grid;
+            padding: 50px 50px 50px 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            background-color: rgba(0, 0, 0, 0.178);
+            grid-gap: 50px 50px;
+            height: 700px;
+            width: 750px;
+            overflow-y: scroll;
+        }
+        button{
+            justify-self: center;
+            background-color:rgb(12, 206, 44);
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 25px;
+        }
+        .form-object{
+            font-size: 25px;
+        }
+        input[type="text"], input[type="email"], input[type="number"]{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        textarea{
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Do share your valuable feedback with us.</p>
+    <form id="survey-form" action="">
+
+        <div class="form-object">
+            <label for="name" id="name-label">
+                Name <br> 
+                <input type="text" name="" id="name" placeholder="Enter your name" required>
+            </label>
+        </div>
+
+        <div class="form-object">
+            <label for="email" id="email-label">
+                Email address <br> 
+                <input type="email" name="" id="email" placeholder="Enter your Email" required>
+            </label>
+        </div>
+
+        <div class="form-object">
+            <label for="number" id="number-label">
+                Age (optional) <br>
+                <input type="number" name="" id="number" min="10" max="80" placeholder="Age"></label>
+            </label>
+        </div>
+        
+        <div class="form-object">
+            <label for="dropdown">
+                Where do you got to know about us ? <br>
+                <select name="" id="dropdown">
+                    <option disabled="" selected="" value="">Select</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Blog">Blog</option>
+                    <option value="Youtube">Youtube</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form-object" style="justify-self: left;">
+            <p style="margin-bottom: 10px;" >Would you recommend us to a friend ?</p>
+            <label for="r1">
+                <input type="radio" name="reco" id="r1" value="definately">Definately
+            </label> <br>
+
+            <label for="r2">
+                <input type="radio" name="reco" id="r2" value="maybe">Maybe
+            </label> <br>
+
+            <label for="r3">
+                <input type="radio" name="reco" id="r3" value="not_sure">Not sure
+            </label> <br>
+        </div>
+
+        <div class="form-object">
+            What would you like to see improved? (Check all that apply) <br>
+            <label for="c1">
+                <input type="checkbox" name="" id="c1" value="Design and presentation">
+                Design and presentation <br>
+            </label>
+            <label for="c2">
+                <input type="checkbox" value="Content" name="" id="c2">
+                Content <br>
+            </label>
+            <label for="c3">
+                <input type="checkbox" value="Accessibility" name="" id="c3">
+                Accessibility <br>
+            </label>
+            <label for="c4">
+                <input type="checkbox" value="Our customer service and feedback" name="" id="c4">
+                Our customer service and feedback 
+            </label>
+        </div>
+
+        <div class="form-object">
+            <label for="comments">Any comments or suggestions? <br>
+                <textarea id="comments" name="comment" placeholder="Enter your comment here...">
+
+                </textarea>
+            </label>
+        </div>
+
+        <div id="form-object">
+            <button id="submit">Submit</button>
+        </div>
+        <div>
+            Made by Ishan Gupta
+        </div>
+    </form>
+</body>
+</html>

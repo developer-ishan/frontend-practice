@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            margin: 5px 5px 5px 5px;
+        }
+        h4{
+            text-align: center;
+            margin: 5px 5px 5px 5px;
+        }
+        .row{
+            display:flex;
+            flex-wrap:wrap;
+            margin: 5px 5px 5px 5px;
+        }
+        .column{
+            flex-basis: 25%;
+        }
+        .column img{
+            vertical-align: middle;
+            width: 100%;
+            padding: 5px 5px 5px 5px;
+            max-width: 100%;
+        }
+        @media (max-width: 800px){
+            .column{
+                flex-basis: 50%;
+            }
+        }
+        @media (max-width: 600px){
+            .column{
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Responsive Image Grid
+    </h1>
+    <h4>Resize the browser window to see the responsive effect</h2>
+    </h4>
+    <div class="row">
+        <div class="column">
+            <img src="p1.jpg">
+            <img src="p2.jpg">
+            <img src="p3.jpg">
+            <img src="p4.jpg">
+            <img src="p5.jpg">
+        </div>
+        <div class="column">
+            <img src="p3.jpg">
+            <img src="p4.jpg">
+            <img src="p1.jpg">
+            <img src="p2.jpg">
+            <img src="p5.jpg">
+        </div>
+        <div class="column">
+            <img src="p1.jpg">
+            <img src="p3.jpg">
+            <img src="p3.jpg">
+            <img src="p5.jpg">
+            <img src="p4.jpg">
+        </div>
+        <div class="column">
+            <img src="p5.jpg">
+            <img src="p4.jpg">
+            <img src="p3.jpg">
+            <img src="p2.jpg">
+            <img src="p1.jpg">
+        </div>
+    </div>
+</body>
+</html>
