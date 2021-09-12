@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.background {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  height: 100vh;
+}
+
+.shadow-box {
+  box-shadow: 10px 10px 31px 10px rgba(0, 0, 0, 0.239);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.border-round {
+  border-radius: 20px;
+}
+.border-round-up {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.bg-red {
+  background-color: red;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+}
+
+.annual-plan {
+  margin-top: 25px;
+  background-color: #ddd7d725;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 25px;
+  border: none;
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.payment {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.233);
+  background-color: #0028eeed;
+  color: white;
+  font-weight: bolder;
+}
+
+.cancel {
+}
+
+@media (max-width: 375px) {
+    .background {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+}
